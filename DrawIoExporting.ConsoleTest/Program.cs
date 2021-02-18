@@ -19,7 +19,7 @@ namespace DrawIoExporting.ConsoleTest
             model.root = GenerateNodes();
             mxfile file = new mxfile(model);
             string fileExport = file.Export();
-            File.WriteAllText("testdiagram4.drawio", fileExport);
+            File.WriteAllText("testdiagram.drawio", fileExport);
         }
 
         static mxCell[] GenerateNodes()
